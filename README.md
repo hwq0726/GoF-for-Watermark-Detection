@@ -1,7 +1,16 @@
 ## Overview
-This repository contains the code for the paper:
 
-## **On the Empirical Power of Goodness-of-Fit Tests in Watermark Detection**  (Available on [arXiv](https://arxiv.org/abs/2510.03944))
+<img src="Neurips25_poster.png" width="400">
+
+<video width="400" controls>
+  <source src="animation.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+*This repository contains the code for the NeurIPS 2025 Spotlight paper:*
+
+## **On the Empirical Power of Goodness-of-Fit Tests in Watermark Detection**  
+(Available on [arXiv](https://arxiv.org/abs/2510.03944))
 
 Our implementations of three watermarking algorithms are based on:
 - [Gumbel-max](https://simons.berkeley.edu/talks/scott-aaronson-ut-austin-openai-2023-08-17): Implementation based on [link](https://github.com/lx10077/WatermarkFramework).
