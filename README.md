@@ -1,29 +1,26 @@
 ## Overview
 
-<img src="Neurips25_poster.png" width="400">
+<img src="Neurips25_poster.png" width="700">
 
-<video width="400" controls>
-  <source src="animation.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<img src="animation.gif" width="700" style="margin-bottom: 20px;">
 
-*This repository contains the code for the NeurIPS 2025 Spotlight paper:*
+**This repository contains the code for the [NeurIPS 2025 Spotlight paper](https://neurips.cc/virtual/2025/loc/san-diego/poster/117439):**
 
 ## **On the Empirical Power of Goodness-of-Fit Tests in Watermark Detection**  
-(Available on [arXiv](https://arxiv.org/abs/2510.03944))
+(Also available on [arXiv](https://arxiv.org/abs/2510.03944))
 
 Our implementations of three watermarking algorithms are based on:
 - [Gumbel-max](https://simons.berkeley.edu/talks/scott-aaronson-ut-austin-openai-2023-08-17): Implementation based on [link](https://github.com/lx10077/WatermarkFramework).
 - [Inverse-Transform](https://arxiv.org/abs/2307.15593): Implementation based on [link](https://github.com/lx10077/WatermarkFramework).
 - [SynthID](https://www-nature-com.proxy.library.upenn.edu/articles/s41586-024-08025-4): Implementation based on [MarkLLM](https://github.com/THU-BPM/MarkLLM/tree/main) with significant modifications. 
 
-**Important Notes:**
+**📜 Important Notes:**
 1. **Implementation Details:** Our implementation uses the continuous version of SynthID where $g$-values follow a uniform distribution on $[0,1]$ for each layer. This differs from both the original SynthID and MarkLLM repositories which use discrete $g$-values following Bernoulli(0.5). While both versions were proposed in the [SynthID paper](https://www-nature-com.proxy.library.upenn.edu/articles/s41586-024-08025-4), we chose the continuous version as its pivotal statistics provides richer information for watermark detection.
 
 2. **Flexibility in Watermark Detection:** For those interested in using our Goodness-of-fit tests for watermark detection, please note that you can generate pivotal statistics using any compatible implementation - *you are not restricted to using our code for this step*. Our detection framework is designed to work with pivotal statistics regardless of their source.
 
 
-## Usage
+## 🛠️ Usage
 
 ### Watermark Detection with GoF Tests
 To detect watermarked text using Goodness-of-Fit (GoF) tests:
@@ -40,7 +37,7 @@ To reproduce the results from our experiments:
 - For Gumbel-max and Inverse-Transform watermarks: See `Gumbel&Transform` directory
 - For SynthID watermark: See `SynthID` directory
 
-## Repository Structure
+## 🧭 Repository Structure
 ### `GoF-tests/`
 - **`demo.ipynb`**: A step-by-step guide on how to use the GoF tests to detect watermarked text.
 - **`example_data_gumbel.pkl`**: The example data for the pivotal statistics of Gumbel-max watermark.
