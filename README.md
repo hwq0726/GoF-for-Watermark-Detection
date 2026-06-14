@@ -68,3 +68,17 @@ Contains the implementation of SynthID.
   - **`read_results.py`**: Extracts pivotal values from watermarked texts
   - **`detect_utils.py`**: Contains the code for the baseline and Goodness-of-fit tests used in the paper.
   - **`get_score.py`**: Performs watermark detection using different methods. Also we include the information attack in this code.
+
+### 📖 Citation
+If you find this work helpful, please consider citing our paper:
+
+```bibtex
+@article{he2026empirical,
+  title={On the Empirical Power of Goodness-of-Fit Tests in Watermark Detection},
+  author={He, Weiqing and Li, Xiang and Shang, Tianqi and Shen, Li and Su, Weijie and Long, Qi},
+  journal={Advances in neural information processing systems},
+  volume={38},
+  pages={18761--18793},
+  year={2026}
+}
+```
